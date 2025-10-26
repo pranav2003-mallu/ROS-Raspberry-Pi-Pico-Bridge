@@ -38,8 +38,8 @@ long lastMotorCommand = AUTO_STOP_INTERVAL;
 
 // -------------------- LED PINS --------------------
 #define LED_BUILTIN_PIN 25   // Pico onboard LED
-#define LED_ROS_STATUS  2    // LED: ON when ROS connected
-#define LED_MODE        3    // LED: Teleop/Auto mode indicator
+#define LED_ROS_STATUS  16    // LED: ON when ROS connected
+#define LED_MODE        17   // LED: Teleop/Auto mode indicator
 // -------------------------------------------------
 
 // Command parsing variables
