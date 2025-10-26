@@ -74,6 +74,13 @@ Install Required Libraries
 
 No external libraries required! All code is self-contained.
 
+LED Behavior Summary
+LED	Purpose	Behavior
+Built-in LED (GPIO 25)	Power / Heartbeat	Blinks every 0.5s
+LED on GPIO 16	ROS connection	ON when ROS is sending commands (active serial)
+LED on GPIO 17	Mode indicator	ON = Teleop (manual)
+OFF = Autonomous
+
 
 # Clone my packge and upload the code to pico and make run it .
 
