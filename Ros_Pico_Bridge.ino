@@ -7,6 +7,8 @@
  * Author: pranav s pillai
  * Email: pranavspillai2003@gmail.com
  * License: Open-source — free to modify/use with credit.
+ * Note: u can modify this code as per your requirements.
+ * this code is open-source and free to use.so if u find it useful,kindly give credit and support. if needed reach out to me.i will help you out.
  *********************************************************************/
 
 #define USE_BASE
