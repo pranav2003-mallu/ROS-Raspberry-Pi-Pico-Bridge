@@ -30,15 +30,20 @@ A complete ROS (Robot Operating System) bridge for Raspberry Pi Pico with L298N 
    # Wire Connection Pico to Motor Driver.
 
 
-     L298N Connections
-L298N        PinP    	Description
-ENA	        GPIO 10	    Left Motor PWM
-IN1	        GPIO 11	    Left Motor Direction 1
-IN2	        GPIO 12	    Left Motor Direction 2
-ENB	        GPIO 13	    Right Motor PWM
-IN3	        GPIO 14	    Right Motor Direction 1
-IN4	        GPIO 15	    Right Motor Direction 2
+     1️⃣ Confirm L298N Wiring
 
+Here’s the correct connection for Pico + L298N (4-wheel car) setup:
+
+L298N Pin	Connect To	Notes
+IN1	Pico GPIO 6	Left motor direction A
+IN2	Pico GPIO 7	Left motor direction B
+IN3	Pico GPIO 8	Right motor direction A
+IN4	Pico GPIO 9	Right motor direction B
+ENA	Pico GPIO 10 (PWM)	Enable left motor
+ENB	Pico GPIO 11 (PWM)	Enable right motor
+12V	Battery positive (e.g., 7.4–12V)	Motor power
+GND	Battery GND + Pico GND	Common ground
+5V OUT	Optional (to power Pico if jumper is on)	Only if using L298N’s regulator (not recommended for high current)
 
 # Encoder Connections
 Encoder	     Pico GPIO	 Description
